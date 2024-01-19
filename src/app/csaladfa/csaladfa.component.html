@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h2>CsaladfaGET</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Név</th>
+                <th scope="col">Dátum</th>
+                <th scope="col">Helyszín</th>
+                <th scope="col">Anyja_neve</th>
+                <th scope="col">Apja_neve</th>
+                <th scope="col">Lehetséges_halálozási_idő</th>
+                <th scope="col">Lehetséges_halálozási_helyszín</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let csaladfa of csaladfaElemek">
+                <td>{{ csaladfa.name }}</td>
+                <td>{{ csaladfa.date }}</td>
+                <td>{{ csaladfa.address }}</td>
+                <td>{{ csaladfa.mothers_name }}</td>
+                <td>{{ csaladfa.fathers_name }}</td>
+                <td>{{ csaladfa.possible_death_time }}</td>
+                <td>{{ csaladfa.possible_death_location }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
